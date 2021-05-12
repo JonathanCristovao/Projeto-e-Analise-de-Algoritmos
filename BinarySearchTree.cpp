@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 struct treenode{
-    int info;
+    int no;
     treenode *esquerda;
     treenode *direita;
 };
@@ -15,7 +15,7 @@ void Inserir(treenodeptr &p, int x){
         p->direita = NULL;
     }
     else{
-        if(x < p->info)// Insere na subarvore esquerda caso contrario insere na sbarvore a direita
+        if(x < p->no)// Insere na subarvore esquerda caso contrario insere na subarvore a direita
             Inserir(p->esquerda, x);
         else
             Inserir(p->direita, x);
@@ -27,11 +27,11 @@ int busca(treenodeptr arvore, int &x){
     }
    treenodeptr aux = arvore;
     while(aux != NULL){
-        cout<< aux->info<<" ";
-        if (x ==aux->info){
+        cout<< aux->no<<" ";
+        if (x ==aux->no){
             return 1;
         }
-       if ( x < aux->info){
+       if ( x < aux->no){
             aux = aux->esquerda;
         }else{
             aux = aux->direita;
