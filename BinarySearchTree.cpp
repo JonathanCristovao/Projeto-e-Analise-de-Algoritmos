@@ -10,7 +10,7 @@ void Inserir(treenodeptr &p, int x){
   
     if (p == NULL){
         p = new treenode;
-        p->info = x;
+        p->no = x;
         p->esquerda = NULL;
         p->direita = NULL;
     }
