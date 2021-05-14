@@ -1,6 +1,5 @@
 
-// Implementacao do algoritmo busca em largura, criacao de um objeto grafo com os atributos publico
-// adicionar aresta e busca em largura.
+// Implementacao do algoritmo busca em largura, criacao de um objeto grafo com os atributos publico.
 #include <iostream>
 #include <list>
 #include <queue> 
