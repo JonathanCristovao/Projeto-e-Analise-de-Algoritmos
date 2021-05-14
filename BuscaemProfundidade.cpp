@@ -1,5 +1,4 @@
-// Implementacao do algoritmo busca em profundidade, criacao de um objeto grafo com os atributos publico
-// adicionar aresta e busca em largura.
+// Implementacao do algoritmo busca em profundidade, criacao de um objeto grafo com os atributos publico.
 #include <iostream>
 #include <list>
 #include <algorithm> 
