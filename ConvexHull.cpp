@@ -36,8 +36,7 @@ void Convexhull(Point points[], int n){
 
 int main(){
 	Point points[] = {{1, 2}, {3, 2}, {7, 4}, {8, 5}, {2, 7}, {9, 5},{6, 3},{3, 8},{6, 7},{1,4},{5, -3},{2, -2}};
-    int n = sizeof(points) / sizeof(points[0]); 
-	SelectionSort(points, n);
+        int n = sizeof(points) / sizeof(points[0]); 
 	Convexhull(points, n);
 	
 	return 0;
