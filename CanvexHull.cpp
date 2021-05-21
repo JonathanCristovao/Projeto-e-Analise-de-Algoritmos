@@ -5,20 +5,6 @@ using namespace std;
 struct Point{
 	int x, y;
 };
-void SelectionSort(struct Point arr[], int n){
-	int i, j, min;
-
-	for (i = 0; i < n - 1; i++){
-		min = i;
-		for (j = i + 1; j < n; j++){
-			if (arr[j].x < arr[min].x){
-				min = j;
-			}
-		}
-		swap(arr[min],arr[i]); // Funcao swap para realizar a troca os elementos de lugares
-	}
-	
-}
 // Casca convexa 
 void Convexhull(Point points[], int n){
 
